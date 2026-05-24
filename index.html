@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Humanity Aid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #1e293b, #0f172a);
+  color:white;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  background:url("https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1400&q=60");
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+  position:relative;
+  max-width:700px;
+}
+
+.hero h1{
+  font-size:42px;
+}
+
+.hero p{
+  opacity:0.9;
+  line-height:1.6;
+}
+
+.btn{
+  margin-top:20px;
+  padding:12px 22px;
+  background:#22c55e;
+  border:none;
+  border-radius:12px;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+}
+
+/* SECTIONS */
+section{
+  padding:80px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  margin-bottom:15px;
+}
+
+/* BOX */
+.box{
+  background:rgba(255,255,255,0.06);
+  padding:18px;
+  border-radius:15px;
+  border:1px solid rgba(255,255,255,0.1);
+  line-height:1.7;
+  margin-top:10px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.06);
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+
+.card .content{
+  padding:15px;
+}
+
+/* DONATION */
+.wallet{
+  background:#0b1220;
+  padding:12px;
+  border-radius:12px;
+  font-size:12px;
+  word-break:break-all;
+  margin-top:10px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border-radius:12px;
+  border:none;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.green{background:#22c55e;color:white;}
+.blue{background:#3b82f6;color:white;}
+
+/* THANK YOU */
+.thanks{
+  text-align:center;
+  padding:60px 20px;
+  background:rgba(34,197,94,0.1);
+  border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.thanks h2{
+  color:#22c55e;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  opacity:0.6;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>💙 Your Donation Can Save a Life</h1>
+    <p>
+      Millions of people in Syria, Sudan, and Ukraine are suffering without homes, food, or safety.
+      Your support brings hope, shelter, and food to those in need.
+    </p>
+
+    <a class="btn" href="#donate">Donate Now</a>
+  </div>
+</div>
+
+<!-- MISSION -->
+<section>
+  <h2>Why Your Help Matters</h2>
+
+  <div class="box">
+    Wars and disasters have forced millions of families to leave their homes.
+    Many children now live without shelter or protection.
+    <br><br>
+    We provide emergency food, shelter, and humanitarian aid in:
+    <b>Syria</b>, <b>Sudan</b>, and <b>Ukraine</b>.
+    <br><br>
+    <b style="color:#22c55e;">Every donation brings real hope to someone’s life.</b>
+  </div>
+</section>
+
+<!-- IMPACT (CHILDREN UPDATED) -->
+<section>
+  <h2>Real Impact</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=60">
+      <div class="content">
+        <h3>Homeless Children</h3>
+        <p>Providing safety and care for children without homes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=60">
+      <div class="content">
+        <h3>Food Support</h3>
+        <p>Daily meals for children affected by war and poverty.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=60">
+      <div class="content">
+        <h3>Safe Shelter</h3>
+        <p>Helping children find safe places to sleep and recover.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DONATION -->
+<section id="donate">
+  <h2>Support Us</h2>
+
+  <div class="box">
+
+    <div class="wallet" id="wallet">
+      TDDFiu4xvSFAfpiVPesu2hebfVogKV2T3B
+    </div>
+
+    <button class="blue" onclick="copyWallet()">Copy Wallet</button>
+
+    <input id="amount" type="number" placeholder="Enter donation amount">
+
+    <button class="green" onclick="donate()">Donate Now</button>
+
+    <p id="msg" style="display:none;color:#22c55e;margin-top:10px;">
+      Thank you for your support ❤️
+    </p>
+
+  </div>
+</section>
+
+<!-- THANK YOU -->
+<section class="thanks">
+  <h2>🙏 Message From Us</h2>
+  <p>
+    Your kindness is more than money… it is hope, life, and a second chance.
+    <br><br>
+    From every child and family you help:
+    <b>Thank you for making the world a better place 💙</b>
+  </p>
+</section>
+
+<footer>
+  © 2026 Global Humanity Aid
+</footer>
+
+<script>
+function copyWallet(){
+  navigator.clipboard.writeText(document.getElementById("wallet").innerText);
+  alert("Wallet copied!");
+}
+
+function donate(){
+  let amount = document.getElementById("amount").value;
+
+  if(!amount || amount <= 0){
+    alert("Invalid amount");
+    return;
+  }
+
+  document.getElementById("msg").style.display = "block";
+}
+</script>
+
+</body>
+</html>
